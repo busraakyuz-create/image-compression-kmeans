@@ -4,6 +4,10 @@ Reducing the number of colors in an image with **unsupervised learning**: every 
 
 **Result:** the 512 × 512 test image goes from **113,382 unique colors to 32**, and it is still easy to recognize.
 
+![Original vs. 32-color image](images/original_vs_32_colors.png)
+
+*Left: original. Right: compressed to 32 colors.*
+
 ## Approach
 1. **Images as data:** reshaped the image from `512 × 512 × 3` into a `262,144 × 3` matrix (pixels × RGB)
 2. **K-Means (k = 32):** each pixel is assigned to one of 32 clusters, and the cluster centers become the new palette
